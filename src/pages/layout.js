@@ -1,18 +1,17 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet} from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+
 
 const Layout = () =>{
     return <div>
         <nav>
             <ul>
-                <li>
-                    <Link to="/usuario">usuario</Link>
-                </li>
-                <li>
-                    <Link to="/login">login</Link>
-                </li>
-                <li>
-                    <Link to="/venta">venta</Link>
-                </li>
+               <Button variant="dark" href="/usuario">usuario</Button>{' '}
+               
+               <Button variant="outline-success" href="/login">login</Button>{' '}
+
+               <Button variant="info" href="/venta">venta</Button>{' '}
+               
             </ul>
         </nav>
         <hr />
@@ -21,3 +20,7 @@ const Layout = () =>{
 }
 
 export default Layout;
+
+
+
+/*React hooks: investigar, dar enfasis a useState, useEffect, useContext, useRef*/
